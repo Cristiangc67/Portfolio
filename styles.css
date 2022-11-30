@@ -257,7 +257,7 @@ h3{
 .banner{
     background: url(img/pexels-wesley-souza-2438323.jpg);
     background-size: cover;
-    background-position: 2.2em;
+    background-position: center;
     height: 50em;
     position: relative;
     z-index: 0;
