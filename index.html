@@ -48,9 +48,9 @@
             <a class="nav-link custom-active" aria-current="page" href="#"
               >Home</a
             >
-            <a class="nav-link" href="#">Sobre mi</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#">Disabled</a>
+            <a class="nav-link" href="#aboutme">Sobre mi</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#contact">Contacto</a>
           </div>
         </div>
       </div>
@@ -58,33 +58,32 @@
 
     <div class="banner">
       <div class="container">
-        <div class="row">
-          <div class="col-6 d-flex flex-column justify-content-around">
+        <div class="row justify-content-lg-between justify-content-start">
+          <div class="col-lg-5 col-xl-6 d-flex flex-column justify-content-around text-center text-lg-start order-2 order-lg-1">
             <h1 id="presentation">Soy Cristian Gutierrez Cruz</h1>
             <span id="cargo"
               >Front-End Developer en Argentina, Buenos Aires.</span
             >
-            <div class="row d-flex justify-content-start">
+            <div class="row d-flex justify-content-lg-start justify-content-center">
               <button type="button" class="col-6 py-2 fs-4" id="cv">
                 Descargar CV
               </button>
             </div>
           </div>
-          <div class="col-6 image-banner">
-            <div class="w-100 h-100 d-flex justify-content-center">
-              <img src="img/cgc.png" id="back" class="" alt="" />
-              <div class="background col-12 align-self-end h-75"></div>
+          <div class="col-lg-6 col-xl-6 image-banner d-none d-md-flex order-1 order-lg-2">
+            <div class="w-100 h-100  d-flex justify-content-center align-items-lg-center">
+              <img src="img/cgc.png" id="back" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="aboutme" class="container">
+    <div id="aboutme" class="container h-100">
       <div class="text-center">
         <h2 class="underline hidden">Sobre mi</h2>
       </div>
-      <div class="row d-flex justify-content-center justify-content-md-around">
+      <div class="row d-flex justify-content-center justify-content-md-around hiddenC">
         <div class="foto col-md-4 col-lg-5">
           <div class="profileback"></div>
           <img src="img/profileP.png" id="profile" class="img-fluid" alt="" />
@@ -100,18 +99,18 @@
           </p>
         </div>
       </div>
-      <h3>Skills</h3>
+      <h3 class="hiddenC">Skills</h3>
       <div class="wrappertarjetas row">
-        <div class="col-3 tarjeta">
+        <div class="col-3 tarjeta hiddenC">
           <img class="tech" src="img/icons8-html-5.svg" alt="" />
         </div>
-        <div class="col-3 tarjeta">
+        <div class="col-3 tarjeta hiddenC">
           <img class="tech" src="img/icons8-css3.svg" alt="" />
         </div>
-        <div class="col-3 tarjeta">
+        <div class="col-3 tarjeta hiddenC">
           <img class="tech" src="img/icons8-javascript.svg" alt="" />
         </div>
-        <div class="col-3 tarjeta">
+        <div class="col-3 tarjeta hiddenC">
           <img class="tech" src="img/icons8-oreja.svg" alt="" />
         </div>
       </div>
@@ -121,16 +120,16 @@
       <div class="text-center">
         <h2 class="underline hidden">Portfolio</h2>
       </div>
-      <div class="wrapperwebs row">
-        <div class="webcard col-12 col-lg-6">
+      <div class="wrapperwebs row d-flex justify-content-around justify-content-lg-between">
+        <div class="webcard col-12 col-lg-6 hiddenC">
           <div class="web-img">
             <img src="img/norway-preview.png" class="img-fluid w-100" alt="" />
           </div>
           <div class="ontop col-12">
             <span class="text-center col-12 fs-2">Proyecto Personal ...</span>
             <div class="col-12 fs-2 d-flex justify-content-between">
-              <span class="badge rounded-pill text-bg-primary">Bootstrap</span>
-              <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+              <span class="badge rounded-pill bootstrap-bg">Bootstrap</span>
+              <span class="badge rounded-pill bg-warning">JavaScript</span>
               <span class="badge rounded-pill text-bg-primary">Primary</span>
             </div>
             <button class="ontopbu btn btn-primary col-3">
@@ -142,7 +141,7 @@
           </div>
         </div>
 
-        <div class="webcard col-12 col-lg-6">
+        <div class="webcard col-12 col-lg-6 hiddenC">
           <div class="web-img">
             <img src="img/norway-preview.png" class="img-fluid w-100" alt="" />
           </div>
@@ -162,7 +161,26 @@
           </div>
         </div>
 
-        <div class="webcard col-12 col-lg-6">
+        <div class="webcard col-12 col-lg-6 hiddenC">
+          <div class="web-img">
+            <img src="img/norway-preview.png" class="img-fluid w-100" alt="" />
+          </div>
+          <div class="ontop col-12">
+            <span class="text-center col-12 fs-2">Proyecto Personal ...</span>
+            <div class="col-12 fs-2 d-flex justify-content-between">
+              <span class="badge rounded-pill text-bg-primary">Primary</span>
+              <span class="badge rounded-pill text-bg-primary">Primary</span>
+              <span class="badge rounded-pill text-bg-primary">Primary</span>
+            </div>
+            <button class="ontopbu btn btn-primary col-3">
+              <img src="img/github.svg" alt="" />Visitar Pagina
+            </button>
+            <button class="ontopbu btn btn-primary col-3">
+              <img src="img/github.svg" alt="" />repositorio
+            </button>
+          </div>
+        </div>
+        <div class="webcard col-12 col-lg-6 hiddenC">
           <div class="web-img">
             <img src="img/norway-preview.png" class="img-fluid w-100" alt="" />
           </div>
@@ -190,19 +208,38 @@
       </div>
 
       <section>
-        <div>
+        <!-- <div class="d-flex justify-content-around">
+          <div class="mailt">
           <a id="mail" href="mailto:cristiangutierrezcruz67@gmail.com">
-            <h3>Enviame un mail</h3>
+              <h3>Enviame un mail</h3>
           </a>
-        </div>
-        <div class="d-flex">
-          <div class="card-contact col-3 d-flex justify-content-around">
-            <img src="img/linkedin.svg" class="h-100" alt="" />
+          </div>
+        </div> -->
+        <div class="d-flex justify-content-around mt-5">
+          <div class="card-contact col-2 d-flex justify-content-center hiddenC">
+            <a href="https://www.linkedin.com/in/cristian-emanuel-gutierrez-cruz-5964aa15a/">
+              <img src="img/linkedin.svg" class="h-100" alt="" />
+            </a>
+          </div>
+          <div class="card-contact col-2 d-flex justify-content-center align-items-center hiddenC">
+            <a href="https://www.linkedin.com/in/cristian-emanuel-gutierrez-cruz-5964aa15a/">
+              <img src="img/icons8-mensaje-relleno-100.png" class="" id="mail" alt="" />
+            </a>
+          </div>
+          <div class="card-contact col-2 d-flex justify-content-center align-items-center hiddenC">
+            <a href="https://github.com/Cristiangc67">
+              <img src="img/github.svg" class="" id="github" alt="" />
+            </a>
           </div>
         </div>
       </section>
     </div>
-
+    <footer class="mt-5 d-flex justify-content-center text-center">
+      <div class="my-3">
+        <p id="foot-text">Cristian Gutierrez Cruz</p>
+        <img src="img/cgc.png" alt="" id="foot-img">
+      </div>
+    </footer>
     <script src="app.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script

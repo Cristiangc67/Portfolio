@@ -12,9 +12,20 @@ document.querySelector('#hamburguer').addEventListener(
             }
         };
     });
+    const observerContent = new IntersectionObserver((entries) => {
+        for (const entry of entries)  {
+            if(entry.isIntersecting){
+                entry.target.classList.add('showC');
+            }
+        };
+    });
     
     const hiddenElements = document.querySelectorAll('.hidden');
+    const hiddenContent  = document.querySelectorAll('.hiddenC');
     
     for (const hiddenItem of hiddenElements) {
         observer.observe(hiddenItem);
+    }
+    for (const hiddenThing of hiddenContent) {
+        observerContent.observe(hiddenThing);
     }

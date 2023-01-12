@@ -16,13 +16,13 @@ body {
   font-size: 1.2em;
 }
 .custom-active {
-  color: #610094;
+  color: #6e02a9;
 }
 .nav-link:hover {
-  color: #8606ca;
+  color: #9a02ec;
 }
 .nav-link:focus {
-  color: #8606ca;
+  color: #9a02ec;
 }
 .line {
   width: 100%;
@@ -121,7 +121,7 @@ body {
 }
 .wrappertarjetas {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 6em;
 }
 .tarjeta {
@@ -142,6 +142,7 @@ body {
   border-radius: 1.5em;
   padding: 2em;
 }
+
 @keyframes animated {
   0% {
     background-position: 0 50%;
@@ -183,7 +184,7 @@ h3 {
   line-height: 2em;
 }
 #portfolio {
-  margin-top: 30em;
+  margin-top: 7em;
 }
 
 .foto {
@@ -223,10 +224,33 @@ h3 {
 .show {
   transform: scaleX(1);
 }
-.wrapperwebs {
-  display: flex;
-  justify-content: space-between;
+.hiddenC {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
+.showC{
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+}
+.tarjeta:nth-child(2){
+  transition-delay: 200ms;
+}
+.tarjeta:nth-child(3){
+  transition-delay: 400ms;
+}
+.tarjeta:nth-child(4){
+  transition-delay: 600ms;
+}
+
+
+.bootstrap-bg{
+  background-color: #833ab4;
+}
+
+
 .webcard {
   overflow: hidden;
   padding: 0;
@@ -256,12 +280,15 @@ h3 {
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
 }
 .ontopbu {
   margin: 2em auto 0 auto;
 }
 .webcard:hover .ontop {
   z-index: 2;
+  opacity: 1;
 }
 
 .banner {
@@ -271,21 +298,12 @@ h3 {
   height: 50em;
   position: relative;
   z-index: 0;
-  /* filter: grayscale(1); */
 }
 #back {
   height: 50em;
-  /* background-color: red; */
   position: absolute;
   z-index: 1;
-  border-radius: 63% 37% 72% 40% / 99% 69% 50% 80%;
-  filter: grayscale(0.5) drop-shadow(10px 10px 8px black);
-}
-.background {
-  height: 25em;
-  position: relative;
-  z-index: 0;
-  border-radius: 63% 37% 72% 28% / 57% 69% 31% 43%;
+  filter: grayscale(0.5);
 }
 .image-banner {
   height: 50em;
@@ -316,7 +334,7 @@ h3 {
 #contact {
   margin-top: 6em;
 }
-#mail {
+/* #mail {
   text-decoration: none;
 }
 #mail h3 {
@@ -327,7 +345,90 @@ h3 {
   transform: rotate(3deg) scale(1.2);
   color: #f016a7;
 }
+.mailt{
+  width: 30em;
+} */
+#mail{
+  height: 8em;
+  align-self: center;
+}
+#github{
+  height: 8.8em;
+}
 .card-contact {
   height: 10em;
-  background-color: aqua;
+  width: 10em;
+  border-radius: 100%;
+  background-color: #fcfcfc;
+  transition: 0.5s cubic-bezier(.32,1.72,.79,.57);
+}
+.card-contact:hover{
+  transform: scale(1.1);
+}
+footer{
+  background-color: #242424;
+  height: 100%;
+  width: 100%;
+}
+#foot-text{
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  color: #fcfcfc;
+}
+#foot-img{
+  height: 6.5em;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #back{
+    height: 20em;
+  }
+  #cargo{
+    font-size: 2em;
+  }
+  #presentation{
+    font-size: 5em;
+  }
+  .image-banner{
+    height: 20em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #back{
+    height: 36.4em;
+  }
+  #cargo{
+    font-size: 2em;
+  }
+  #presentation{
+    font-size: 5em;
+  }
+  .image-banner{
+    height: 46em;
+  }
+ 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #back{
+    height: 42em;
+  }
+  #cargo{
+    font-size: 2.5em;
+  }
+  #presentation{
+    font-size: 6em;
+  }
+  .image-banner{
+    height: 50em;
+  }
 }
