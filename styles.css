@@ -379,10 +379,35 @@ footer{
   height: 6.5em;
 }
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  #presentation{
+    font-size: 4.5em;
+  }
+  #profile{
+    width: 21em;
+    height: 21em;
+  }
+  .profileback{
+    width: 13em;
+    height: 25em;
+  }
+  .card-contact{
+    width: 7em;
+    height: 7em;
+  }
+  #github{
+    width: 6.5em;
+  }
+  
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  #presentation{
+    font-size: 5.5em;
+  }
+  
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
