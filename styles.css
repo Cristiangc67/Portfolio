@@ -15,9 +15,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
 }
-.custom-active {
-  color: #6e02a9;
-}
 .nav-link:hover {
   color: #9a02ec;
 }
